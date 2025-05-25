@@ -1,0 +1,98 @@
+.login-body {
+    width: 100%; 
+    display: flex;
+    padding-bottom: 20px;
+    padding: 50px 10px;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.login {
+    border-radius: 4px;
+    margin-left: -50px;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+.register {
+    margin-top: 20px;
+    border-radius: 4px;
+    margin-right: -400px;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+
+}
+
+.register-link {
+    outline: none;
+    border: none;
+}
+
+p {
+    margin: 30px;
+    color: #333;
+}
+
+.login-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-input {
+    margin: 4px 0;
+    padding: 8px 12px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.login-btn {
+    width: 100%;
+    text-align: center;
+    padding: 8px 10px;
+    margin-top: 14px;
+    color: white;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #2670bb;
+    background-color: #2670bb;
+}
+
+.register-btn {
+    width: 257px;
+}
+
+.login-btn:hover {
+    background-color: rgba(38, 112, 187, 0.9);
+
+}
+
+.login-text {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-top: 4px;
+}
+
+.forgot-passwork {
+    font-size: 1.1rem;
+    text-align: right;
+    margin-top: 4px;
+    margin-right: 0px;
+    padding: 0;
+    cursor: pointer;
+    width: 85px;
+    margin-left: 172px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}

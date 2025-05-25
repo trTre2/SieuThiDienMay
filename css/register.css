@@ -1,0 +1,25 @@
+.register-main {
+    font-size: 1.7rem;
+    color: #333;
+    text-align: center;
+}
+
+.login-input {
+    padding: 10px;
+    padding-right: 250px;
+
+}
+
+.login-btn {
+    padding: 13px;
+    outline: none;
+    border: none;
+}
+
+.full-info {
+    margin-left: 0;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0;
+    margin-bottom: 8px;
+}

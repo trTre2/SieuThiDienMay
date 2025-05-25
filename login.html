@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="font/fontawesome-free-6.5.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<script>
+    function checkLogin() {
+        // Danh sách tài khoản và mật khẩu mẫu 
+        var validUsers = {
+            "admin": "123456",
+            "user": "password"
+        };
+
+        // Lấy giá trị từ form
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Kiểm tra tài khoản
+        if (validUsers[username] && validUsers[username] === password) {
+            alert("Đăng nhập thành công!");
+            window.location.href = "index.html"
+            return false; 
+        } else {
+            alert("Sai tài khoản hoặc mật khẩu!");
+            return false; 
+        }
+    }
+</script>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="" class="logo-img" />
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm" />
+            </div>
+            <div class="user">
+                <div class="user-login">
+                    <i class="fa-solid fa-user icon-login"></i>
+                    <a href="login.html" class="login-link" >ĐĂNG NHẬP</a>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="list-bottom">
+              <nav class="list">
+                <a href="index.html" class="item-link">TRANG CHỦ</a>
+                <div class="submenu-wrapper">
+                  <a class="item-link" id="submenu">SẢN PHẨM</a>
+                  <ul id="product">
+                    <li><a href="tivi.html" class="item-link">TIVI</a></li>
+                    <li><a href="loa.html" class="item-link">LOA</a></li>
+                    <li><a href="dieuhoa.html" class="item-link">ĐIỀU HÒA</a></li>
+                  </ul>
+                </div>
+                <a href="about.html" class="item-link">VỀ CHÚNG TÔI</a>
+                <a href="news.html" class="item-link">TIN TỨC</a>
+              </nav>
+            </div>
+            <div class="hotline-top">
+              <i class="fa-solid fa-phone"></i>
+              <span class="hotline">18001788</span>
+            </div>
+          </div>
+    </div>
+    <div class="login-body">
+        <div class="register">
+            <p>KHÁCH HÀNG MỚI</p>
+            <div class="login-info">
+                <P class="login-text">Bằng cách tạo tài khoản bạn sẽ có thể mua sắm<br> nhanh hơn và nhiều chương
+                    trình
+                    mua
+                    sắm ưu<br> đãi hơn dành
+                    riêng cho khách hàng thân thiết.</P>
+                <div class="btn">
+                    <a href="register.html" class="register-link"> <input type="button" class="login-btn register-btn"
+                            value="ĐĂNG KÝ">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <p>ĐĂNG NHẬP TÀI KHOẢN</p>
+            <form onsubmit="return checkLogin();">
+            <div class="login-info">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" class="login-input" placeholder="Nhập tên đăng nhập" type="text" id="username" required>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" class="login-input" placeholder="Nhập mật khẩu" type="password" id="password" required>
+                <div class="btn"> 
+                    <a><input type="submit" class="login-btn" type="submit" value="ĐĂNG NHẬP"></a>
+                    <p class="forgot-passwork">Quên mật khẩu ?</p>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
